@@ -17,13 +17,7 @@ public class Task4 {
         else {
             int[] vec = new int[n];
             for (int i = 0; i < vec.length; i++) {
-                vec[i] = (int) (Math.random() * 10);
-            }
-            for (int j = 0; j < vec.length; j++) {
-                double a = Math.random();
-                if (a > 0.5) {
-                    vec[j] = vec[j] * -1;
-                }
+                vec[i] = (int) ((Math.random() * 30) - 15);
             }
 
             int sum_neg = 0;

@@ -30,6 +30,7 @@ public class Task2 {
                     break;
                 case 6:
                     System.out.println("Суббота");
+                    break;
                 case 7:
                     System.out.println("Воскресенье");
                     break;

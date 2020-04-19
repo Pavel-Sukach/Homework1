@@ -21,7 +21,7 @@ public class Task6 {
 
         for (int i = 0; i < doubleDimArray.length; i++){
             for (int j = 0; j < doubleDimArray[0].length; j++) {
-                if ((doubleDimArray[i][j] % 2) == 1) {
+                if ((doubleDimArray[i][j] % 2) > 0) {
                     System.out.print(1);
                 } else {
                     System.out.print(0);

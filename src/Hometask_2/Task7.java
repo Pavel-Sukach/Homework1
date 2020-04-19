@@ -5,16 +5,13 @@ public class Task7 {
         seventh();
     }
     public static void seventh(){
-        int a = (int) (Math.random() * 10);
+        int rows = (int) (Math.random() * 10);
 
-        int[][] randArray = new int[a][];
+        int[][] randArray = new int[rows][];
         for(int i = 0; i < randArray.length; i++){
-            int b = (int) (Math.random() * 10);
-            randArray[i] = new int[b];
-        }
+            randArray[i] = new int[(int) (Math.random() * 10)];
 
-        for(int i = 0; i < randArray.length; i++){
-            for(int j = 0; j < randArray[i].length; j++){
+            for (int j = 0; j < randArray[i].length; j++){
                 randArray[i][j] = (int) (Math.random() * 10);
             }
         }
