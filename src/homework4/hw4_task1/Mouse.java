@@ -1,6 +1,6 @@
 package homework4.hw4_task1;
 
-public abstract class Mouse extends Rodents implements AbletoMove, MakeNoises{
+public abstract class Mouse extends Rodents implements IMove, MakeNoises{
     protected int numOfSqueeksPerMin;
 
     @Override

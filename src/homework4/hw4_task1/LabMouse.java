@@ -1,6 +1,6 @@
 package homework4.hw4_task1;
 
-public class LabMouse extends Mouse implements CanBeEaten {
+public class LabMouse extends Mouse implements IEatable {
     protected int resisToVirus;
 
     public LabMouse(int legs, int spineLength, int incisorLength, int numOfSqueeksPerMin, int resisToVirus) {
@@ -12,7 +12,7 @@ public class LabMouse extends Mouse implements CanBeEaten {
     }
 
     @Override
-    public void canBeEaten(){
+    public void eatable(){
         System.out.println("Can be eaten by a cat");
     }
 }

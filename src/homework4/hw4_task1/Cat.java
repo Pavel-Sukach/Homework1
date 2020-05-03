@@ -1,6 +1,6 @@
 package homework4.hw4_task1;
 
-public abstract class Cat extends Feline implements AbletoMove, MakeNoises {
+public abstract class Cat extends Feline implements IMove, MakeNoises {
     protected int numOfLives;
 
     @Override

@@ -1,6 +1,6 @@
 package homework4.hw4_task1;
 
-public class GermanShepherd extends Dog implements CanEatSmb{
+public class GermanShepherd extends Dog implements IEat{
     protected int numOfCrimCaught;
 
     public GermanShepherd(int legs, int spineLength, String packName, int howlingVolume, int loyalty, int numOfCrimCaught) {
@@ -13,7 +13,7 @@ public class GermanShepherd extends Dog implements CanEatSmb{
     }
 
     @Override
-    public void canEatAnotherAnim() {
+    public void eat() {
         System.out.println("Can eat mice and cats");
     }
 }

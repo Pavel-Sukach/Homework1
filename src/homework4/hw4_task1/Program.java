@@ -5,19 +5,19 @@ public class Program {
         PersianCat persianCat = new PersianCat(4,35,7,9,10,1);
         persianCat.makeNoises();
         persianCat.move();
-        persianCat.canBeEaten();
-        persianCat.canEatAnotherAnim();
+        persianCat.eatable();
+        persianCat.eat();
         System.out.println();
 
         GermanShepherd germanShepherd = new GermanShepherd(4,77,"Howlers",10, 10, 11);
         germanShepherd.makeNoises();
         germanShepherd.move();
-        germanShepherd.canEatAnotherAnim();
+        germanShepherd.eat();
         System.out.println();
 
         LabMouse labMouse = new LabMouse(4,5,3,111, 9);
         labMouse.makeNoises();
         labMouse.move();
-        labMouse.canBeEaten();
+        labMouse.eatable();
     }
 }

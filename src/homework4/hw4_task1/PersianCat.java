@@ -1,6 +1,6 @@
 package homework4.hw4_task1;
 
-public class PersianCat extends Cat implements CanBeEaten, CanEatSmb{
+public class PersianCat extends Cat implements IEatable, IEat{
     protected int lenOfMuzzle;
 
     public PersianCat(int legs, int spineLength, int purVolume, int stepSoftness, int numOfLives, int lenOfMuzzle) {
@@ -13,12 +13,12 @@ public class PersianCat extends Cat implements CanBeEaten, CanEatSmb{
     }
 
     @Override
-    public void canBeEaten(){
+    public void eat(){
         System.out.println("Can be eaten by a Wolf");
     }
 
     @Override
-    public void canEatAnotherAnim() {
+    public void eatable() {
         System.out.println("Cat eats mice");
     }
 }

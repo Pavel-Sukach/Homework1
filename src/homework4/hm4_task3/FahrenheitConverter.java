@@ -1,15 +1,16 @@
 package homework4.hm4_task3;
 
-import java.util.Scanner;
 
 public class FahrenheitConverter implements Converter{
     @Override
-    public void convert() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите значение: ");
-        float farVal = scanner.nextFloat();
-        float celVal = (farVal - 32)*5/9;
-        float kelVal = celVal - 273.15f;
-        System.out.printf("%.2f градуса по Фаренгейту - это %.2f по Цельсию и %.2f по Кельвину.", farVal, celVal, kelVal);
+    public void convert(float val, String scale) {
+        if(scale.equals("ЦЕЛЬСИЙ")){
+            float fahrVal1 = (float) (val * 9/5 + 32);
+            System.out.printf("%.2f градуса по Цельсию - это %.2f по Фаренгейту.", val, fahrVal1);
+        }
+        else if(scale.equals("КЕЛЬВИН")){
+            float fahrVal2 = (float)((val - 273.15f) * 9/5 + 32);
+            System.out.printf("%.2f градуса по Кельвину - это %.2f по Фаренгейту.", val, fahrVal2);
+        }
     }
 }

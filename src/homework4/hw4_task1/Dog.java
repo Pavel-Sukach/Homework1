@@ -1,6 +1,6 @@
 package homework4.hw4_task1;
 
-public abstract class Dog extends Canine implements AbletoMove, MakeNoises{
+public abstract class Dog extends Canine implements IMove, MakeNoises{
     protected int loyalty;
 
     @Override
