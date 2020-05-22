@@ -3,7 +3,7 @@ package homework6.Task2;
 import java.util.ArrayList;
 
 public class Customer {
-    ArrayList<String> listOfPurchases;
+    private ArrayList<String> listOfPurchases;
 
 
     public Customer(ArrayList<String> listOfPurchases) {
